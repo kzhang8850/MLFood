@@ -26,7 +26,7 @@ We will be using [K-Means Clustering](https://github.com/jakevdp/PythonDataScien
 
 
 <p align="center">
-  <img src="category_table.jpg"/>
+  <img src="category_table_final.jpg"/>
 </p>
 
 *Figure 2: The six groups found by the K-Means clustering, labeled by the average values of macronutrient composition. A couple of examples for each category is shown in the final column. Note that the average composition of each group defines each one fairly well as one of the 6 food groups, and the examples are quite consistent with the defined groups.*
@@ -69,7 +69,7 @@ Finally, we show the holistic results of our K-Means algorithm in a more quantit
 Figure 5 shows the matrix of predictions against their true labels in a kind of heat map display, where the cells are a combination of a predicted label on each food's true label, where in this case true label refers to the preconceived food groups. Correct predictions lie on the main diagonal, and any other square is an incorrect prediction. Thus, a perfect prediction from our K-Means algorithm would be seen if the main diagonal of the matrix was black squares, as that would mean that all true labels were correctly predicted. However, in our case, the predictions are more scattered about the matrix, showing that the food groups are not as accurate as we believe them to be. As shown in Figures 3 and 4, the Meat groups has a high accuracy rate, but the Fruits group has a very low accurate rate. Dairy and Cereal are also poor, and the rest are near the middle. Looking into the source code, we calculate the accuracy score of our K-Means algorithm, which is the numerical calculation of this confusion matrix as a percentage of correct predictions. The accuracy score of the K-Means algorithm was about **57%**, showing that the food groups are only accurate in its method of categorization for about half the foods listed among the basic food groups.
 
 <p align="center">
-  <img src="percentages.jpg"/>
+  <img src="percentages_final.jpg"/>
 </p>
 
 *Figure 6: A table showing a group breakdown of each group from the Food Pyramid and how they are distributed among the 6 groups from K-Means. As can be clearly seen, some groups, such as Meats, are very centralized in one group, but other groups, such as cereals, fruits, and dairy, are torn between multiple groups, some as many as four. This shows that the Food Pyramid's grouping of food has some apparent flaws.*
