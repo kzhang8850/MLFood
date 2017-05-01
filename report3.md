@@ -23,10 +23,8 @@ To evaluate the "correct" groupings of food, which is inherently subjective, we 
 We will be using [K-Means Clustering](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/05.11-K-Means.ipynb) as the principle tool to see if the Food Pyramid's food groups are correct. The K-Means algorithm will search for 6 clusters, the supposed 6 major food groups, based on the macronutrient criteria through an unsupervised learning approach. Then using the 6 groups found by the K-Means algorithm which it believes are the 6 real groups based on nutrient content, we will compare them against the 6 food groups defined by the Food Pyramid to see how similar they are. In addition, we will also be using accuracy scores of K-Means predictions and confusion matrices to more quantitatively look into the similarities between the categorizations of the two groups.
 
 
-
-![food grouping table](category_table.jpg)
 <p align="center">
-  <img src="category_table.jpg"/>
+  <img src="category_table.jpg" style="width: 600px"/>
 </p>
 
 *Figure 2: The six groups found by the K-Means clustering, labeled by the average values of macronutrient composition. A couple of examples for each category is shown in the final column. Note that the average composition of each group defines each one fairly well as one of the 6 food groups, and the examples are quite consistent with the defined groups.*
